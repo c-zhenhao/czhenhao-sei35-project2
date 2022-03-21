@@ -8,7 +8,7 @@ function SearchResults({ drink }) {
       <div className="searchCard">
         <img
           style={{
-            width: "160px",
+            width: "300px",
             borderTopLeftRadius: "20px",
             borderTopRightRadius: "20px",
             margin: "2px",
@@ -24,10 +24,13 @@ function SearchResults({ drink }) {
             borderBottomRightRadius: "10px",
             borderBottomLeftRadius: "10px",
             backgroundColor: "rgba(0,0,255,1)",
-            marginTop: "-35px",
+            marginTop: "-45px",
             marginLeft: "2px",
             marginRight: "2px",
             textOverflow: "none",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <br></br>

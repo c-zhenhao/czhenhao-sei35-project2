@@ -7,6 +7,12 @@ function Search() {
   const [drinks, setDrinks] = useState([]);
   const [input, setInput] = useState("");
 
+  // useeffect only on submit
+  // useEffect(() => {
+  //   console.log(`useEFfect is called`);
+  //   searchDrinks("");
+  // }, []);
+
   // handle input
   function handleInput(event) {
     console.log(event.target.value);
@@ -35,12 +41,6 @@ function Search() {
       setDrinks(drinksData);
     }
   };
-
-  // useeffect only on submit
-  // useEffect(() => {
-  //   console.log(`useEFfect is called`);
-  //   searchDrinks("");
-  // }, []);
 
   return (
     <>
