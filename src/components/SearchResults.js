@@ -23,7 +23,7 @@ function SearchResults({ drink }) {
             height: "90px",
             borderBottomRightRadius: "10px",
             borderBottomLeftRadius: "10px",
-            backgroundColor: "rgba(165,55,253,0.3)",
+            backgroundColor: "rgba(0,0,255,1)",
             marginTop: "-35px",
             marginLeft: "2px",
             marginRight: "2px",

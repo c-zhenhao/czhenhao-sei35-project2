@@ -2,7 +2,9 @@ import React from "react";
 
 function NavBar() {
   return (
-    <div className="NavBar">&#123; appIsWorking ? Shaken : !Stirred &#125;</div>
+    <div className="NavBar">
+      <div className="NavBar-container">&#123; ? Shaken : !Stirred &#125;</div>
+    </div>
   );
 }
 
