@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Oxygen", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(to left, #323a49, #362c46);
+  color: whitesmoke;
+}
+
+.NavBar {
+  height: 50px;
+  background-color: rgba(165, 55, 253, 0.3);
+  font-size: 1.5rem;
+
+  /* flexbox */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+
+  /* bounding box */
+  margin: 5px;
+  border: 5px solid yellow;
+  padding: 5px;
+}
+
+.title {
+  font-size: 1rem;
+
+  /* flexbox */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.centered {
+  margin: 2rem auto;
+
+  /* flexbox */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* bounding box */
+  margin: 2px;
+  border: 2px solid fuchsia;
+  padding: 2px;
+}
+
+.searchBar {
+  margin: 3rem auto;
+  width: 100%;
+
+  /* flexbox */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+
+  /* bounding box */
+  margin: 2px;
+  border: 2px solid cyan;
+  padding: 2px;
+}
+
+.searchContainer {
+  margin: 3rem auto;
+
+  /* flexbox */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  /* bounding box */
+  margin: 2px;
+  border: 2px solid lime;
+  padding: 2px;
+}
+
+.searchCard {
+  margin: 20px;
+
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.searchCard:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+}
