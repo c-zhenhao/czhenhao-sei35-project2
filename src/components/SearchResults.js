@@ -27,7 +27,6 @@ function SearchResults({ drink }) {
             exitModal={handleModalClose}
           />
         )}
-        ;
       </div>
       <div className="searchCard">
         <img
