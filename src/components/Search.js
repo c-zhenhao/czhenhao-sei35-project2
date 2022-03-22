@@ -47,6 +47,7 @@ function Search() {
       <div className="title">
         <h1>Search for something to mix...</h1>
       </div>
+
       <div className="searchBar">
         <input
           className="searchBox"
@@ -57,6 +58,7 @@ function Search() {
         ></input>
         <button onClick={handleSubmit}>search</button>
       </div>
+
       <div className="searchContainer">
         {drinks.map((drink) => {
           return <SearchResults drink={drink} key={drink.idDrink} />;

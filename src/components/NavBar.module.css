@@ -36,6 +36,7 @@
 .NavBar .NavBar_ul {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 
   /* bounding box */
   margin: 3px;
@@ -67,4 +68,11 @@ a:link {
   color: whitesmoke;
   padding-bottom: 0.25rem;
   border-bottom: 2px dotted whitesmoke;
+}
+
+@media (max-width: 600px) {
+  .NavBar .NavBar_ul {
+    justify-content: flex-end;
+    width: min-content;
+  }
 }

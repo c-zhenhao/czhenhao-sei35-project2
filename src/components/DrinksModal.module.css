@@ -5,7 +5,9 @@
   width: 100%;
   height: 100vh;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
 }
 
 .board {
@@ -24,7 +26,7 @@
 }
 
 .header {
-  background: red;
+  background: blue;
   padding: 1rem;
 }
 
@@ -44,7 +46,7 @@
   justify-content: flex-end;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .modal {
     left: calc(50% - 20rem);
     width: 40rem;

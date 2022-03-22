@@ -22,8 +22,18 @@ function SearchResults({ drink }) {
       <div className="drinksModal">
         {modalState && (
           <DrinksModal
+            id={drink.idDrink}
+            pic={drink.strDrinkThumb + "/preview"}
             title={drink.strDrink}
-            message={drink.strVideo}
+            tags={drink.strTag}
+            glass={drink.strGlass}
+            ingredient1={drink.strIngredient1}
+            measure1={drink.strMeasure1}
+            ingredient2={drink.strIngredient2}
+            measure2={drink.strMeasure2}
+            ingredient3={drink.strIngredient3}
+            measure3={drink.strMeasure3}
+            instructions={drink.strInstructions}
             exitModal={handleModalClose}
           />
         )}
