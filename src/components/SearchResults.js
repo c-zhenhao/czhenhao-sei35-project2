@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+import DrinksModal from "./DrinksModal";
 
 function SearchResults({ drink }) {
   console.log(drink);
+  const [modalState, setModalState] = useState(false);
+
+  // handle modal state on click set to true
+  function handleClick() {
+    console.log("div is clicked");
+    setModalState(true);
+  }
+
+  // handle modal state to false
+  function handleModalClose(event) {
+    console.log("close the modal");
+    setModalState(false);
+  }
 
   return (
     <>
+      <div className="drinksModal">
+        {modalState && (
+          <DrinksModal
+            title={drink.strDrink}
+            message={drink.strVideo}
+            exitModal={handleModalClose}
+          />
+        )}
+        ;
+      </div>
       <div className="searchCard">
         <img
           style={{
@@ -15,6 +39,8 @@ function SearchResults({ drink }) {
             border: "2px transparent rgba(255,0,0,1)",
           }}
           src={drink.strDrinkThumb}
+          alt={drink.strDrink}
+          onClick={handleClick}
         ></img>
         <br />
         <div

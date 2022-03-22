@@ -44,6 +44,9 @@ function Search() {
 
   return (
     <>
+      <div className="title">
+        <h1>Search for something to mix...</h1>
+      </div>
       <div className="searchBar">
         <input
           className="searchBox"

@@ -7,9 +7,6 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <div className="title">
-        <h2>Search for something to mix...</h2>
-      </div>
       <div className="centered">
         <Search />
       </div>
