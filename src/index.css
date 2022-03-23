@@ -15,6 +15,63 @@ body {
   color: whitesmoke;
 }
 
+.NavBar {
+  height: fit-content;
+  background-color: blue;
+
+  position: sticky;
+  float: left;
+  top: 0;
+  width: 100%;
+
+  /* bounding box */
+  margin: 5px;
+  border: 3px solid yellow;
+  padding: 2px;
+}
+
+.NavBar .NavBar-container {
+  /* flexbox */
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  justify-items: center;
+  height: fit-content;
+
+  /* bounding box */
+  margin: 3px;
+  border: 3px solid yellow;
+  padding: 3px;
+}
+
+.NavBar .logo {
+  font-size: 2.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.NavBar .NavBar-ul {
+  list-style-type: none;
+  display: flex;
+
+  /* bounding box */
+  margin: 3px;
+  border: 3px solid gold;
+  padding: 3px;
+}
+
+.NavBar .NavBar-ul li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+
+  /* bounding box */
+  margin: 3px;
+  border: 3px solid gold;
+  padding: 3px;
+  margin-left: 30px;
+}
+
 .title {
   font-size: 1rem;
 

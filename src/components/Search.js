@@ -59,7 +59,7 @@ function Search() {
           })}
         {drinks == null ? (
           <div className="empty">
-            no dranks found... (blame the API... not me...)
+            no drinks found... (blame the API... not me...)
           </div>
         ) : (
           ""

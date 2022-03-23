@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactDOM from "react-dom";
 
 import styles from "./DrinksModal.module.css";
+
+import { GlobalContext } from "../context/GlobalState";
 
 function DrinkModal(props) {
   return (
@@ -29,8 +31,9 @@ function DrinkModal(props) {
 }
 
 const OverLay = (props) => {
+  const { addDrinksToFavList } = useContext(GlobalContext);
   return (
-    <div className={styles.backdrop} onClick={props.exitModal}>
+    <div className={styles.backdrop}>
       <div className={`${styles.board} ${styles.modal}`}>
         <header className={styles.header}>
           <img src={props.pic}></img>
@@ -51,56 +54,24 @@ const OverLay = (props) => {
           <p>{props.id}</p>
         </div>
 
-        <footer className={styles.actions}></footer>
-        <button>add to favourites</button>
-        <button>-</button>
-        <div className="counter">0</div>
-        <button>+</button>
+        <footer className={styles.actions}>
+          <button
+            onClick={() => {
+              addDrinksToFavList(props);
+            }}
+          >
+            add to favourites
+          </button>
+          <button>-</button>
+          <div className="counter" style={{ color: "black" }}>
+            0
+          </div>
+          <button>+</button>
+          <button onClick={props.exitModal}>close modal</button>
+        </footer>
       </div>
     </div>
   );
 };
 
 export default DrinkModal;
-
-// import React from "react";
-// import ReactDOM from "react-dom";
-
-// import styles from "./ErrorModal.module.css";
-// import Button from "./Button";
-
-// function ErrorModal(props) {
-//   return (
-//     <>
-//       {ReactDOM.createPortal(
-//         <OverLay
-//           title={props.title}
-//           message={props.message}
-//           okayClicked={props.okayClicked}
-//         />,
-//         document.querySelector("#modal-root")
-//       )}
-//     </>
-//   );
-// }
-
-// const OverLay = (props) => {
-//   return (
-//     <div className={styles.backdrop} onClick={props.okayClicked}>
-//       <div className={`${styles.board} ${styles.modal}`}>
-//         <header className={styles.header}>
-//           <h2>{props.title}</h2>
-//         </header>
-//         <div className={styles.content}>
-//           <p>{props.message}</p>
-//         </div>
-
-//         <footer className={styles.actions}>
-//           <Button onClick={props.okayClicked}>OK</Button>
-//         </footer>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ErrorModal;
