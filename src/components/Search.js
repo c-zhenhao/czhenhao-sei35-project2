@@ -38,6 +38,8 @@ function Search() {
     setDrinks(drinksData);
   };
 
+  console.log(drinks);
+
   return (
     <>
       <div className="title">
@@ -56,7 +58,7 @@ function Search() {
       </div>
 
       <div className="searchContainer">
-        {drinks.length > 0 &&
+        {drinks !== null &&
           drinks.map((drink) => {
             return <SearchResults drink={drink} key={drink.idDrink} />;
           })}
