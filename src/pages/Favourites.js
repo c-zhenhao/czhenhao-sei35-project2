@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
+import FavResults from "../components/FavResults";
 
 function Favourites() {
   const { favList } = useContext(GlobalContext);
@@ -12,13 +13,15 @@ function Favourites() {
         <h1>your favourites</h1>
       </div>
 
-      {favList.length > 0 ? (
-        <div className="favCard">
-          <h2>{favList[0].title}</h2>
-        </div>
-      ) : (
-        <div className="favCard_empty">no favourites... add some!</div>
-      )}
+      <div className="searchContainer">
+        {favList.length > 0 ? (
+          favList.map((drink) => {
+            return <FavResults drink={drink} key={drink.id} />;
+          })
+        ) : (
+          <div className="favCard_empty">no favourites... add some!</div>
+        )}
+      </div>
     </>
   );
 }

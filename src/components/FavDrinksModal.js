@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
 
-import styles from "./DrinksModal.module.css";
+import styles from "./FavDrinksModal.module.css";
 
 import { GlobalContext } from "../context/GlobalState";
 
-function DrinkModal(props) {
+function FavDrinksModal(props) {
   return (
     <>
       {ReactDOM.createPortal(
@@ -31,7 +31,7 @@ function DrinkModal(props) {
 }
 
 const OverLay = (props) => {
-  const { addDrinksToFavList } = useContext(GlobalContext);
+  const { removeDrinksFromFavList } = useContext(GlobalContext);
 
   return (
     <div className={styles.backdrop}>
@@ -61,16 +61,11 @@ const OverLay = (props) => {
         <footer className={styles.actions}>
           <button
             onClick={() => {
-              addDrinksToFavList(props);
+              removeDrinksFromFavList(props.id);
             }}
           >
-            add to favourites
+            remove from favourites
           </button>
-          <button>-</button>
-          <div className="counter" style={{ color: "black" }}>
-            0
-          </div>
-          <button>+</button>
           <button onClick={props.exitModal}>close modal</button>
         </footer>
       </div>
@@ -78,4 +73,4 @@ const OverLay = (props) => {
   );
 };
 
-export default DrinkModal;
+export default FavDrinksModal;

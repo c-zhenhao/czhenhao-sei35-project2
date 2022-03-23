@@ -3,7 +3,12 @@ export default (state, action) => {
     case "ADD_TO_FAVLIST":
       return {
         ...state,
-        favList: [action.payload, ...state.favList],
+        favList: [...state.favList, action.payload],
+      };
+    case "REMOVE_FROM_FAVLIST":
+      return {
+        ...state,
+        favList: state.favList.filter((drink) => drink.id !== action.payload),
       };
     default:
       return state;

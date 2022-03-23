@@ -17,6 +17,13 @@ export const GlobalProvider = (props) => {
   function addDrinksToFavList(drink) {
     console.log(drink);
     dispatch({ type: "ADD_TO_FAVLIST", payload: drink });
+    console.log("added to favourites!");
+  }
+
+  function removeDrinksFromFavList(id) {
+    console.log(id);
+    dispatch({ type: "REMOVE_FROM_FAVLIST", payload: id });
+    console.log("remove from favourites!");
   }
 
   return (
@@ -24,6 +31,7 @@ export const GlobalProvider = (props) => {
       value={{
         favList: state.favList,
         addDrinksToFavList,
+        removeDrinksFromFavList,
       }}
     >
       {props.children}
