@@ -3,7 +3,9 @@ import AppReducer from "./AppReducer";
 
 // initial state
 const initialState = {
-  favList: [],
+  favList: localStorage.getItem("favList")
+    ? JSON.parse(localStorage.getItem("favList"))
+    : [],
 };
 
 // create context
@@ -12,6 +14,10 @@ export const GlobalContext = createContext(initialState);
 // create global provider to allow access
 export const GlobalProvider = (props) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
+
+  useEffect(() => {
+    localStorage.setItem("favList", JSON.stringify(state.favList));
+  }, [state]);
 
   // actions
   function addDrinksToFavList(drink) {
