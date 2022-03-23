@@ -53,9 +53,9 @@ const OverLay = (props) => {
 
         <footer className={styles.actions}></footer>
         <button>add to favourites</button>
-        <button>+</button>
-        <div className="counter">0</div>
         <button>-</button>
+        <div className="counter">0</div>
+        <button>+</button>
       </div>
     </div>
   );

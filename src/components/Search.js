@@ -35,11 +35,7 @@ function Search() {
 
     const drinksData = response.data.drinks;
 
-    if (drinksData === null) {
-      setDrinks("");
-    } else {
-      setDrinks(drinksData);
-    }
+    setDrinks(drinksData);
   };
 
   return (
@@ -60,9 +56,10 @@ function Search() {
       </div>
 
       <div className="searchContainer">
-        {drinks.map((drink) => {
-          return <SearchResults drink={drink} key={drink.idDrink} />;
-        })}
+        {drinks.length > 0 &&
+          drinks.map((drink) => {
+            return <SearchResults drink={drink} key={drink.idDrink} />;
+          })}
       </div>
     </>
   );
