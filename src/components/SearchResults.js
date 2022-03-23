@@ -33,6 +33,12 @@ function SearchResults({ drink }) {
             measure2={drink.strMeasure2}
             ingredient3={drink.strIngredient3}
             measure3={drink.strMeasure3}
+            ingredient4={drink.strIngredient4}
+            measure4={drink.strMeasure4}
+            ingredient5={drink.strIngredient5}
+            measure5={drink.strMeasure5}
+            ingredient6={drink.strIngredient6}
+            measure6={drink.strMeasure6}
             instructions={drink.strInstructions}
             exitModal={handleModalClose}
           />

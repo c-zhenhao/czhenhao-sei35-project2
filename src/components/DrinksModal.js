@@ -19,8 +19,14 @@ function DrinkModal(props) {
           measure1={props.measure1}
           ingredient2={props.ingredient2}
           measure2={props.measure2}
-          ingredient3={props.ingredient2}
+          ingredient3={props.ingredient3}
           measure3={props.measure3}
+          ingredient4={props.ingredient4}
+          measure4={props.measure4}
+          ingredient5={props.ingredient5}
+          measure5={props.measure5}
+          ingredient6={props.ingredient6}
+          measure6={props.measure6}
           instructions={props.instructions}
           exitModal={props.exitModal}
         />,
@@ -53,6 +59,15 @@ const OverLay = (props) => {
           </p>
           <p>
             {props.measure3} {props.ingredient3}
+          </p>
+          <p>
+            {props.measure4} {props.ingredient4}
+          </p>
+          <p>
+            {props.measure5} {props.ingredient5}
+          </p>
+          <p>
+            {props.measure6} {props.ingredient6}
           </p>
           <p>{props.instructions}</p>
           <p>{props.id}</p>

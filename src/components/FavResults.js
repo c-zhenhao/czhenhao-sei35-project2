@@ -33,6 +33,12 @@ function FavResults({ drink }) {
             measure2={drink.measure2}
             ingredient3={drink.ingredient3}
             measure3={drink.measure3}
+            ingredient4={drink.ingredient4}
+            measure4={drink.measure4}
+            ingredient5={drink.ingredient5}
+            measure5={drink.measure5}
+            ingredient6={drink.ingredient6}
+            measure6={drink.measure6}
             instructions={drink.instructions}
             exitModal={handleModalClose}
           />
