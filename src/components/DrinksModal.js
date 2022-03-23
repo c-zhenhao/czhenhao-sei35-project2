@@ -37,7 +37,13 @@ function DrinkModal(props) {
 }
 
 const OverLay = (props) => {
-  const { addDrinksToFavList } = useContext(GlobalContext);
+  const { addDrinksToFavList, favList } = useContext(GlobalContext);
+
+  console.log(favList);
+  let storedDrink = favList.find((obj) => obj.id === props.id);
+  console.log(storedDrink);
+
+  const favListDisabled = storedDrink ? true : false;
 
   return (
     <div className={styles.backdrop}>
@@ -75,9 +81,11 @@ const OverLay = (props) => {
 
         <footer className={styles.actions}>
           <button
+            className="favButton"
             onClick={() => {
               addDrinksToFavList(props);
             }}
+            disabled={favListDisabled}
           >
             add to favourites
           </button>

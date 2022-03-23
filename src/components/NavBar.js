@@ -6,7 +6,9 @@ function NavBar() {
   return (
     <div className={styles.NavBar}>
       <div className={styles.NavBar_container}>
-        <div className={styles.logo}>&#123; ? Shaken : !Stirred &#125;</div>
+        <div className={styles.logo}>
+          &#123; React ? Shaken : !Stirred &#125;
+        </div>
         <ul className={styles.NavBar_ul}>
           <li>
             <NavLink
