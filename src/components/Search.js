@@ -27,18 +27,13 @@ function Search() {
   // search drinks from API
   const searchDrinks = async (input) => {
     const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
-    // get response from API
-    const response = await axios.get(url);
 
-    // check response from API
+    const response = await axios.get(url);
     console.log(response.data);
 
     const drinksData = response.data.drinks;
-
     setDrinks(drinksData);
   };
-
-  console.log(drinks);
 
   return (
     <>
@@ -62,6 +57,13 @@ function Search() {
           drinks.map((drink) => {
             return <SearchResults drink={drink} key={drink.idDrink} />;
           })}
+        {drinks == null ? (
+          <div className="empty">
+            no dranks found... (blame the API... not me...)
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </>
   );
