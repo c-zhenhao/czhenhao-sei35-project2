@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -15,65 +16,13 @@ body {
   color: whitesmoke;
 }
 
-.NavBar {
-  height: fit-content;
-  background-color: blue;
-
-  position: sticky;
-  float: left;
-  top: 0;
-  width: 100%;
-
-  /* bounding box */
-  margin: 5px;
-  border: 3px solid yellow;
-  padding: 2px;
-}
-
-.NavBar .NavBar-container {
-  /* flexbox */
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  justify-items: center;
-  height: fit-content;
-
-  /* bounding box */
-  margin: 3px;
-  border: 3px solid yellow;
-  padding: 3px;
-}
-
-.NavBar .logo {
-  font-size: 2.5rem;
-  font-family: "Lobster", cursive;
-}
-
-.NavBar .NavBar-ul {
-  list-style-type: none;
-  display: flex;
-
-  /* bounding box */
-  margin: 3px;
-  border: 3px solid gold;
-  padding: 3px;
-}
-
-.NavBar .NavBar-ul li {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-
-  /* bounding box */
-  margin: 3px;
-  border: 3px solid gold;
-  padding: 3px;
-  margin-left: 30px;
+strong {
+  font-size: 1.2rem;
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-family: "Satisfy", cursive;
 
   /* flexbox */
   display: flex;
@@ -87,7 +36,8 @@ body {
 
   /* bounding box */
   margin: 2px;
-  border: 2px solid orange;
+  border: 2px;
+  /* border: 2px solid orange; */
   padding: 2px;
 }
 
@@ -123,7 +73,8 @@ body {
 
   /* bounding box */
   margin: 2px;
-  border: 2px solid cyan;
+  border: 2px;
+  /* border: 2px solid cyan; */
   padding: 2px;
 }
 
@@ -142,7 +93,8 @@ body {
 
   /* bounding box */
   margin: 2px;
-  border: 2px solid lime;
+  /* border: 2px solid lime; */
+  border: 2px;
   padding: 2px;
 }
 
@@ -160,4 +112,42 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.searchBox {
+  height: 40px;
+  width: 300px;
+  font-size: 1rem;
+  font-style: italic;
+  background-color: whitesmoke;
+  border: 2px;
+  color: lightslategray;
+}
+
+.searchButton {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  margin-left: 10px;
+  background-color: #bf1b96;
+  border: 1px solid #db208e;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.randomButton {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  margin-left: 10px;
+  background-color: #bf1b96;
+  border: 1px solid #db208e;
+  color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.searchButton:hover,
+.randomButton:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
 }

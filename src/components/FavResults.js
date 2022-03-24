@@ -25,7 +25,7 @@ function FavResults({ drink }) {
             id={drink.id}
             pic={drink.pic}
             title={drink.title}
-            tags={drink.tags}
+            category={drink.category}
             glass={drink.glass}
             ingredient1={drink.ingredient1}
             measure1={drink.measure1}
@@ -64,7 +64,7 @@ function FavResults({ drink }) {
             height: "90px",
             borderBottomRightRadius: "10px",
             borderBottomLeftRadius: "10px",
-            backgroundColor: "rgba(255,0,0,1)",
+            backgroundColor: "#F72585",
             marginTop: "-45px",
             marginLeft: "2px",
             marginRight: "2px",
@@ -72,9 +72,10 @@ function FavResults({ drink }) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            fontSize: "1.1rem",
+            paddingTop: "15px",
           }}
         >
-          <br></br>
           <br></br>
           {drink.title}
         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
 import LoadingSpinner from "./LoadingSpinner";
@@ -68,8 +68,12 @@ function SearchDrink() {
           value={input}
           onChange={handleInput}
         ></input>
-        <button onClick={handleSubmit}>SEARCH</button>
-        <button onClick={handleRandomSubmit}>RNG</button>
+        <button className="searchButton" onClick={handleSubmit}>
+          🔎
+        </button>
+        <button className="randomButton" onClick={handleRandomSubmit}>
+          🎲
+        </button>
       </div>
 
       <div className="searchContainer">
@@ -83,7 +87,10 @@ function SearchDrink() {
         )}
         {drinks == null ? (
           <div className="empty">
-            no drinks found... (blame the API... not me...)
+            no drinks found...{" "}
+            <small>
+              <sup>(blame the API... not me...)</sup>
+            </small>
           </div>
         ) : (
           ""

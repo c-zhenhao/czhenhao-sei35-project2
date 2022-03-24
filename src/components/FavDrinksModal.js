@@ -13,7 +13,7 @@ function FavDrinksModal(props) {
           id={props.id}
           pic={props.pic}
           title={props.title}
-          tags={props.tags}
+          category={props.category}
           glass={props.glass}
           ingredient1={props.ingredient1}
           measure1={props.measure1}
@@ -43,45 +43,71 @@ const OverLay = (props) => {
     <div className={styles.backdrop}>
       <div className={`${styles.board} ${styles.modal}`}>
         <header className={styles.header}>
-          <img src={props.pic}></img>
-          <h2>{props.pic}</h2>
+          <div className={styles.headerImage}>
+            <img src={props.pic}></img>
+          </div>
+
+          <div className={styles.headerContent}>
+            <h2>{props.title}</h2>
+            <p>
+              <strong>Category: </strong>
+              {props.category}
+            </p>
+            <p>
+              <strong>Glass: </strong>
+              {props.glass}
+            </p>
+          </div>
         </header>
 
         <div className={styles.content}>
-          <p>{props.title}</p>
-          <p>{props.tags}</p>
-          <p>{props.glass}</p>
-          <p>
-            {props.measure1} {props.ingredient1}
-          </p>
-          <p>
-            {props.measure2} {props.ingredient2}
-          </p>
-          <p>
-            {props.measure3} {props.ingredient3}
-          </p>
-          <p>
-            {props.measure4} {props.ingredient4}
-          </p>
-          <p>
-            {props.measure5} {props.ingredient5}
-          </p>
-          <p>
-            {props.measure6} {props.ingredient6}
-          </p>
-          <p>{props.instructions}</p>
-          <p>{props.id}</p>
+          <div className={styles.contentLeft}>
+            <p>
+              <strong>Ingredients: </strong>
+            </p>
+            <p>
+              {props.measure1} {props.ingredient1}
+            </p>
+            <p>
+              {props.measure2} {props.ingredient2}
+            </p>
+            <p>
+              {props.measure3} {props.ingredient3}
+            </p>
+            <p>
+              {props.measure4} {props.ingredient4}
+            </p>
+            <p>
+              {props.measure5} {props.ingredient5}
+            </p>
+            <p>
+              {props.measure6} {props.ingredient6}
+            </p>
+          </div>
+
+          <div className={styles.contentRight}>
+            <p>
+              <strong>Instructions: </strong>
+            </p>
+            <p>{props.instructions}</p>
+          </div>
         </div>
 
         <footer className={styles.actions}>
+          <p>
+            <strong>Drink ID: </strong> {props.id}
+          </p>
           <button
+            className={styles.favButton}
             onClick={() => {
               removeDrinksFromFavList(props.id);
             }}
           >
-            remove from favourites
+            💔
           </button>
-          <button onClick={props.exitModal}>close modal</button>
+          <button className={styles.closeButton} onClick={props.exitModal}>
+            ❌
+          </button>
         </footer>
       </div>
     </div>

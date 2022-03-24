@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
 .NavBar {
   height: fit-content;
-  background-color: blue;
+  background-color: #3a0ca3;
 
   position: sticky;
   float: left;
@@ -9,7 +13,8 @@
 
   /* bounding box */
   margin: 5px;
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
+  border: 3px;
   padding: 2px;
 
   z-index: 69420;
@@ -23,12 +28,13 @@
   justify-content: space-between;
   justify-items: center;
   height: fit-content;
-  z-index: 100;
+  z-index: 69420;
 
   /* bounding box */
-  margin: 3px;
-  border: 3px solid yellow;
-  padding: 3px;
+  margin: 2px;
+  /* border: 3px solid yellow; */
+  border: 2px;
+  padding: 2px;
 }
 
 .NavBar .logo {
@@ -42,9 +48,10 @@
   flex-wrap: wrap;
 
   /* bounding box */
-  margin: 3px;
-  border: 3px solid gold;
-  padding: 3px;
+  margin: 2px;
+  /* border: 3px solid gold; */
+  border: 2px;
+  padding: 2px;
 }
 
 .NavBar .NavBar_ul li {
@@ -52,11 +59,16 @@
   display: flex;
   justify-content: space-evenly;
 
+  font-size: 1.15em;
+  font-weight: bold;
+
   /* bounding box */
-  margin: 3px;
-  border: 3px solid gold;
-  padding: 3px;
-  margin-left: 30px;
+  margin: 2px;
+  margin-top: 5px;
+  /* border: 3px solid gold; */
+  border: 2px;
+  padding: 2px;
+  margin-left: 20px;
 }
 
 .NavBar a:visited,

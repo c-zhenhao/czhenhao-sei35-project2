@@ -24,7 +24,7 @@ function DiscoverResults({ drink }) {
             height: "90px",
             borderBottomRightRadius: "10px",
             borderBottomLeftRadius: "10px",
-            backgroundColor: "rgba(0,0,255,1)",
+            backgroundColor: "#3F37C9",
             marginTop: "-45px",
             marginLeft: "2px",
             marginRight: "2px",
@@ -32,10 +32,12 @@ function DiscoverResults({ drink }) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            fontSize: "1.1rem",
+            paddingTop: "15px",
           }}
         >
           <br></br>
-          <br></br>
+
           {drink.strDrink}
         </div>
       </div>

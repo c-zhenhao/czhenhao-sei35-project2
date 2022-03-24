@@ -50,6 +50,10 @@ function DiscoverDrinks() {
     console.log("discoverBrandy clicked");
     discoverDrinks("Brandy");
   }
+  function discoverCoffee() {
+    console.log("discoverCoffee clicked");
+    discoverDrinks("Coffee");
+  }
 
   return (
     <>
@@ -58,12 +62,12 @@ function DiscoverDrinks() {
           to="/search"
           className={(navData) => (navData.isActive ? styles.active : "")}
         >
-          <h1>Have something in mind already?</h1>
+          <h1>Ready to discover your inner mixologist...? 🔍</h1>
         </NavLink>
       </div>
 
       <div className={styles.subtitle}>
-        <h1>Discover by spirit type</h1>
+        <h1>Discover by base liquor type</h1>
       </div>
 
       <div className={styles.discoverContainer}>
@@ -101,6 +105,13 @@ function DiscoverDrinks() {
             onClick={discoverBrandy}
           >
             <h2>Brandy</h2>
+          </div>
+          <div
+            id={styles.coffee}
+            className={styles.item}
+            onClick={discoverCoffee}
+          >
+            <h2>¿Coffee?</h2>
           </div>
         </div>
       </div>

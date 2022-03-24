@@ -25,7 +25,7 @@ function SearchResults({ drink }) {
             id={drink.idDrink}
             pic={drink.strDrinkThumb + "/preview"}
             title={drink.strDrink}
-            tags={drink.strTag}
+            category={drink.strCategory}
             glass={drink.strGlass}
             ingredient1={drink.strIngredient1}
             measure1={drink.strMeasure1}
@@ -64,17 +64,18 @@ function SearchResults({ drink }) {
             height: "90px",
             borderBottomRightRadius: "10px",
             borderBottomLeftRadius: "10px",
-            backgroundColor: "rgba(0,0,255,1)",
-            marginTop: "-45px",
+            backgroundColor: "#560BAD",
+            marginTop: "-50px",
             marginLeft: "2px",
             marginRight: "2px",
             textOverflow: "none",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            fontSize: "1.1rem",
+            paddingTop: "15px",
           }}
         >
-          <br></br>
           <br></br>
           {drink.strDrink}
         </div>
