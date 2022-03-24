@@ -21,6 +21,7 @@
   justify-content: space-between;
   justify-items: center;
   height: fit-content;
+  z-index: 100;
 
   /* bounding box */
   margin: 3px;

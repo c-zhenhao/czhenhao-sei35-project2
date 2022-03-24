@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
+import LoadingSpinner from "./LoadingSpinner";
 
 function Search() {
   // states
   const [drinks, setDrinks] = useState([]);
   const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   // useeffect only on submit
   // useEffect(() => {
@@ -24,8 +26,15 @@ function Search() {
     searchDrinks(input);
   }
 
+  // handle submit
+  function handleRandomSubmit() {
+    searchRandomDrink();
+  }
+
   // search drinks from API
   const searchDrinks = async (input) => {
+    setIsLoading(true);
+
     const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${input}`;
 
     const response = await axios.get(url);
@@ -33,12 +42,28 @@ function Search() {
 
     const drinksData = response.data.drinks;
     setDrinks(drinksData);
+
+    setIsLoading(false);
+  };
+
+  // search drinks from API
+  const searchRandomDrink = async () => {
+    setIsLoading(true);
+    const url = `https://www.thecocktaildb.com/api/json/v1/1/random.php`;
+
+    const response = await axios.get(url);
+    console.log(response.data);
+
+    const drinksData = response.data.drinks;
+    setDrinks(drinksData);
+
+    setIsLoading(false);
   };
 
   return (
     <>
       <div className="title">
-        <h1>Search for something to mix...</h1>
+        <h1>What would you like to drink?</h1>
       </div>
 
       <div className="searchBar">
@@ -49,14 +74,19 @@ function Search() {
           value={input}
           onChange={handleInput}
         ></input>
-        <button onClick={handleSubmit}>search</button>
+        <button onClick={handleSubmit}>SEARCH</button>
+        <button onClick={handleRandomSubmit}>RNG</button>
       </div>
 
       <div className="searchContainer">
-        {drinks !== null &&
+        {isLoading ? (
+          <LoadingSpinner />
+        ) : (
+          drinks !== null &&
           drinks.map((drink) => {
             return <SearchResults drink={drink} key={drink.idDrink} />;
-          })}
+          })
+        )}
         {drinks == null ? (
           <div className="empty">
             no drinks found... (blame the API... not me...)

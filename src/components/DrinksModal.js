@@ -89,11 +89,6 @@ const OverLay = (props) => {
           >
             add to favourites
           </button>
-          <button>-</button>
-          <div className="counter" style={{ color: "black" }}>
-            0
-          </div>
-          <button>+</button>
           <button onClick={props.exitModal}>close modal</button>
         </footer>
       </div>
