@@ -36,10 +36,10 @@ function NavBar() {
           </li>
           <li>
             <NavLink
-              to="kitchen"
+              to="cart"
               className={(navData) => (navData.isActive ? styles.active : "")}
             >
-              Kitchen
+              Cart
             </NavLink>
           </li>
         </ul>

@@ -40,7 +40,7 @@ function SearchDrink() {
     setIsLoading(false);
   };
 
-  // search drinks from API
+  // get random drink from API
   const searchRandomDrink = async () => {
     setIsLoading(true);
     const url = `https://www.thecocktaildb.com/api/json/v1/1/random.php`;

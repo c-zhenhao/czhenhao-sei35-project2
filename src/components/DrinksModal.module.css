@@ -83,11 +83,27 @@
   border: none;
   background-color: transparent;
   color: white;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .favButton:disabled {
   filter: grayscale(79%);
+  filter: blur(2px);
+}
+
+.cartButton {
+  height: 40px;
+  width: 50px;
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.cartButton:disabled {
+  filter: blur(2px);
 }
 
 .closeButton {

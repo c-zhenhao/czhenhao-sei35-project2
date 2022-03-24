@@ -37,13 +37,20 @@ function DrinkModal(props) {
 }
 
 const OverLay = (props) => {
-  const { addDrinksToFavList, favList } = useContext(GlobalContext);
+  const { addDrinksToFavList, favList, addToCart, cartList } =
+    useContext(GlobalContext);
 
   console.log(favList);
+  console.log(cartList);
+
   let storedDrink = favList.find((obj) => obj.id === props.id);
   console.log(storedDrink);
 
+  let storedCart = cartList.find((obj) => obj.id === props.id);
+  console.log(storedCart);
+
   const favListDisabled = storedDrink ? true : false;
+  const CartListDisabled = storedCart ? true : false;
 
   return (
     <div className={styles.backdrop}>
@@ -103,6 +110,15 @@ const OverLay = (props) => {
           <p>
             <strong>Drink ID: </strong> {props.id}
           </p>
+          <button
+            className={styles.cartButton}
+            onClick={() => {
+              addToCart(props);
+            }}
+            disabled={CartListDisabled}
+          >
+            🛒
+          </button>
           <button
             className={styles.favButton}
             onClick={() => {

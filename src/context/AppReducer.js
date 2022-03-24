@@ -10,6 +10,16 @@ export default (state, action) => {
         ...state,
         favList: state.favList.filter((drink) => drink.id !== action.payload),
       };
+    case "ADD_TO_CART":
+      return {
+        ...state,
+        cartList: [...state.cartList, action.payload],
+      };
+    case "REMOVE_FROM_CART":
+      return {
+        ...state,
+        cartList: state.cartList.filter((drink) => drink.id !== action.payload),
+      };
     default:
       return state;
   }

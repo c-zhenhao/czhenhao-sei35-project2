@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import ReactDOM from "react-dom";
 
-import styles from "./FavDrinksModal.module.css";
+import styles from "./CartModal.module.css";
 
 import { GlobalContext } from "../context/GlobalState";
 
-function FavDrinksModal(props) {
+function CartModal(props) {
   return (
     <>
       {ReactDOM.createPortal(
@@ -37,13 +37,7 @@ function FavDrinksModal(props) {
 }
 
 const OverLay = (props) => {
-  const { removeDrinksFromFavList, addToCart, cartList } =
-    useContext(GlobalContext);
-
-  let storedCart = cartList.find((obj) => obj.id === props.id);
-  console.log(storedCart);
-
-  const CartListDisabled = storedCart ? true : false;
+  const { removeFromCart } = useContext(GlobalContext);
 
   return (
     <div className={styles.backdrop}>
@@ -106,19 +100,10 @@ const OverLay = (props) => {
           <button
             className={styles.cartButton}
             onClick={() => {
-              addToCart(props);
-            }}
-            disabled={CartListDisabled}
-          >
-            🛒
-          </button>
-          <button
-            className={styles.favButton}
-            onClick={() => {
-              removeDrinksFromFavList(props.id);
+              removeFromCart(props.id);
             }}
           >
-            💔
+            🗑️
           </button>
           <button className={styles.closeButton} onClick={props.exitModal}>
             ❌
@@ -129,4 +114,4 @@ const OverLay = (props) => {
   );
 };
 
-export default FavDrinksModal;
+export default CartModal;
