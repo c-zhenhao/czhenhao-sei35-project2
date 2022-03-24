@@ -3,17 +3,11 @@ import axios from "axios";
 import SearchResults from "./SearchResults";
 import LoadingSpinner from "./LoadingSpinner";
 
-function Search() {
+function SearchDrink() {
   // states
   const [drinks, setDrinks] = useState([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-
-  // useeffect only on submit
-  // useEffect(() => {
-  //   console.log(`useEFfect is called`);
-  //   searchDrinks("");
-  // }, []);
 
   // handle input
   function handleInput(event) {
@@ -99,4 +93,4 @@ function Search() {
   );
 }
 
-export default Search;
+export default SearchDrink;

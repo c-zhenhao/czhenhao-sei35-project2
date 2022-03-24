@@ -12,7 +12,15 @@ function NavBar() {
         <ul className={styles.NavBar_ul}>
           <li>
             <NavLink
-              to="page-one"
+              to="discover"
+              className={(navData) => (navData.isActive ? styles.active : "")}
+            >
+              Discover
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="search"
               className={(navData) => (navData.isActive ? styles.active : "")}
             >
               Search

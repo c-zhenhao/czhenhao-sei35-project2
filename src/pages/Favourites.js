@@ -19,7 +19,7 @@ function Favourites() {
             return <FavResults drink={drink} key={drink.id} />;
           })
         ) : (
-          <div className="favCard_empty">no favourites... add some!</div>
+          <div className="favCard_empty">No favourites... add some!</div>
         )}
       </div>
     </>
