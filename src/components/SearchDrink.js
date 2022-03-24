@@ -87,6 +87,7 @@ function SearchDrink() {
         )}
         {drinks == null ? (
           <div className="empty">
+            <br />
             no drinks found...{" "}
             <small>
               <sup>(blame the API... not me...)</sup>
