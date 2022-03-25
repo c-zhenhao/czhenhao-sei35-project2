@@ -41,6 +41,7 @@ const OverLay = (props) => {
           <div className={styles.contentRight}>
             <a href={`https://coldstorage.com.sg/search?q=${props.ingre}`}>
               <img
+                className={styles.image}
                 src="https://d3ckgtbv0fk1sf.cloudfront.net/media/uploads/images/77179a50b0b87c8d5d69bc9564f40085.png"
                 alt="coldstorage"
               ></img>
@@ -48,6 +49,7 @@ const OverLay = (props) => {
 
             <a href={`https://shengsiong.com.sg/search/${props.ingre}`}>
               <img
+                className={styles.image}
                 src="https://s3-ap-southeast-1.amazonaws.com/shengsiongcontent/wp-content/uploads/2020/06/01112211/SS_logo_eng_plain-e1590981996889.jpg"
                 alt="shengsiong"
               ></img>
@@ -57,6 +59,7 @@ const OverLay = (props) => {
               href={`https://www.fairprice.com.sg/search?query=${props.ingre}`}
             >
               <img
+                className={styles.image}
                 src="https://theme.zdassets.com/theme_assets/2115944/95fc6603504ec0ada9cbcefae9c21cf3cd512eab.png"
                 alt="fairprice"
               ></img>
@@ -64,6 +67,7 @@ const OverLay = (props) => {
 
             <a href={`https://giant.sg/search?q=${props.ingre}`}>
               <img
+                className={styles.image}
                 src="https://d34sur1hfhbnek.cloudfront.net/media/MRDF6XSDV62898KC70KWVP0VJM.png"
                 alt="giant"
               ></img>
@@ -71,6 +75,7 @@ const OverLay = (props) => {
 
             <a href={`https://shopee.sg/search?keyword=${props.ingre}`}>
               <img
+                className={styles.image}
                 src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/ca5d12864c12916c05640b36e47ac5c9.png"
                 alt="shopee"
               ></img>
@@ -78,6 +83,7 @@ const OverLay = (props) => {
 
             <a href={`https://www.lazada.sg/catalog/?q=${props.ingre}`}>
               <img
+                className={styles.image}
                 src="https://img.alicdn.com/tfs/TB1NbbEPqL7gK0jSZFBXXXZZpXa-564-250.png"
                 alt="redmart"
               ></img>

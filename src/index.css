@@ -98,6 +98,26 @@ strong {
   padding: 2px;
 }
 
+.cartContainer {
+  margin: 3rem auto;
+
+  /* flexbox */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex: 1;
+
+  /* bounding box */
+  margin: 2px;
+  /* border: 2px solid lime; */
+  border: 2px;
+  padding: 2px;
+}
+
 .searchCard {
   margin: 20px;
 

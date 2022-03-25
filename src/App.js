@@ -14,7 +14,7 @@ function App() {
       <div className="app">
         <NavBar />
         <Routes>
-          <Route path="/" element={<Navigate replace to="search" />} />
+          <Route path="/" element={<Navigate replace to="discover" />} />
           <Route path="/discover" element={<Discover />} />
           <Route path="/search" element={<Search />} />
           <Route path="/favourites" element={<Favourites />} />
