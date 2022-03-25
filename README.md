@@ -1,6 +1,7 @@
 # {React ? Stirred : !Notshaken}
 
 See project deployed on Netlify here: https://reactshakennotstirred.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd30ba11-297a-4b23-90c0-f9b12ad58721/deploy-status)](https://app.netlify.com/sites/reactshakennotstirred/deploys)
 
 ## Why
 
