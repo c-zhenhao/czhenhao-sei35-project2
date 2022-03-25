@@ -12,10 +12,9 @@
   width: 100%;
 
   /* bounding box */
-  margin: 5px;
+  /* margin: 5px; */
   /* border: 3px solid yellow; */
-  border: 3px;
-  padding: 2px;
+  padding: 12px;
 
   z-index: 69420;
 }

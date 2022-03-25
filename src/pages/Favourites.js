@@ -10,7 +10,7 @@ function Favourites() {
   return (
     <>
       <div className="title">
-        <h1>Your favourites</h1>
+        <h1>⭐ Your Favourites ⭐</h1>
       </div>
 
       <div className="searchContainer">

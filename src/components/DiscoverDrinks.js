@@ -62,7 +62,7 @@ function DiscoverDrinks() {
           to="/search"
           className={(navData) => (navData.isActive ? styles.active : "")}
         >
-          <h1>Ready to discover your inner mixologist...? 🔍</h1>
+          <h1>🔎 Ready to discover your inner mixologist...? 🔍</h1>
         </NavLink>
       </div>
 

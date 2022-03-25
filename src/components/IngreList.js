@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import IngreModal from "./CartModal";
+import IngreModal from "./IngreListModal";
 
 function IngreList({ ingre }) {
   console.log(ingre);
@@ -9,6 +9,7 @@ function IngreList({ ingre }) {
   function handleClick() {
     console.log("div is clicked");
     setIngreModalState(true);
+    window.open(`https://coldstorage.com.sg/search?q=${ingre}`);
   }
 
   // handle modal state to false
@@ -19,15 +20,11 @@ function IngreList({ ingre }) {
 
   return (
     <>
-      {/* <div className="drinksModal">
+      <div className="drinksModal">
         {ingreModalState && (
-          <IngreModal
-            ingre={ingre}
-            exitModal={handleModalClose}
-          />
+          <IngreModal ingre={ingre} exitModal={handleModalClose} />
         )}
-      </div> */}
-      {/* <div className="searchCard"> */}
+      </div>
       <img
         style={{
           width: "250px",
@@ -58,7 +55,6 @@ function IngreList({ ingre }) {
         <br />
         {ingre}
       </div>
-      {/* </div> */}
     </>
   );
 }

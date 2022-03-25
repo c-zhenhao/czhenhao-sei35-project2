@@ -44,7 +44,7 @@ function Cart() {
   return (
     <>
       <div className={styles.title}>
-        <h1>What you need to make your dreams come true</h1>
+        <h1>⭐ What you need to make your dreams come true ⭐</h1>
       </div>
 
       <div className={styles.ingreContainer}>
@@ -58,15 +58,15 @@ function Cart() {
               );
             })
           ) : (
-            <div className="ingreList_empty">
-              no ingredients... add some drinks!
+            <div className={styles.ingreList_empty}>
+              No ingredients... add some drinks!
             </div>
           )}
         </div>
       </div>
 
-      <div className="title">
-        <h1>Your Cart</h1>
+      <div className={styles.title}>
+        <h1>🛒 Your Cart 🛒</h1>
       </div>
 
       <div className="searchContainer">
@@ -75,7 +75,7 @@ function Cart() {
             return <CartResults drink={drink} key={drink.id} />;
           })
         ) : (
-          <div className="cartList_empty">No list... add some!</div>
+          <div className="cartList_empty">No list... add some drinks!</div>
         )}
       </div>
     </>

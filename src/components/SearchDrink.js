@@ -57,7 +57,7 @@ function SearchDrink() {
   return (
     <>
       <div className="title">
-        <h1>What would you like to drink?</h1>
+        <h1>🍹 What would you like to drink? 🍸</h1>
       </div>
 
       <div className="searchBar">
