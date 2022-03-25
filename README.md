@@ -24,7 +24,7 @@ My MVP was to deliver a cocktail recipe search app. For example, if a user would
   - ![project2_virtualDom](https://user-images.githubusercontent.com/16322250/160202279-23fe78cd-2122-4bf4-abd6-c02302d1ebde.png)
 
 
-- React hooks that are "not-important-to-syllabus" functions such as `useReducer` & `useContext` in combination was actually quite useful and simplified problems of passing information from one child node. The concept of propping information lifting states was still
+- React hooks that are "not-important-to-syllabus" functions such as `useReducer` & `useContext` in combination was actually quite useful and simplified problems of passing information from one child node. The concept of propping information lifting states still key to React and used.
 
   - Creating a "global" function since multiple things need to be done inside a modal. Storing the information in a "global" state
 
