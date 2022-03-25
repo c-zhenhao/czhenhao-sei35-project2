@@ -50,7 +50,7 @@ const OverLay = (props) => {
       <div className={`${styles.board} ${styles.modal}`}>
         <header className={styles.header}>
           <div className={styles.headerImage}>
-            <img src={props.pic}></img>
+            <img src={props.pic} alt={props.title}></img>
           </div>
 
           <div className={styles.headerContent}>

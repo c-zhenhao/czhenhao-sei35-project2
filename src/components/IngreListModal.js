@@ -23,6 +23,7 @@ const OverLay = (props) => {
           <div className={styles.headerImage}>
             <img
               src={`https://www.thecocktaildb.com/images/ingredients/${props.ingre}-small.png`}
+              alt={props.ingre}
             ></img>
           </div>
 
