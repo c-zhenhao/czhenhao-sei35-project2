@@ -33,7 +33,7 @@ My MVP was to deliver a cocktail recipe search app. For example, if a user would
 ## Useful links from the project
 
 - [cocktail API](https://www.thecocktaildb.com/api.php)
-- [React Movie App using React Hooks (useContext)](https://youtu.be/1eO_hNYzaSc)
+- [youtube guide React Movie App using React Hooks (useContext)](https://youtu.be/1eO_hNYzaSc)
 - [Unique values in JS Array](https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates)
 
 ## Future roadmap
