@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
-import LoadingSpinner from "./LoadingSpinner";
+import LoadingSpinner from "../LoadingSpinnerCompo/LoadingSpinner";
 
 function SearchDrink() {
   // states

@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import CartResults from "../components/CartResults";
-import IngreList from "../components/IngreList";
+import CartResults from "../components/CartCompo/CartResults";
+import IngreList from "../components/CartCompo/IngreList";
 
-import styles from "../components/CartResults.module.css";
+import styles from "../components/CartCompo/CartResults.module.css";
 
 function Cart() {
   const { cartList } = useContext(GlobalContext);

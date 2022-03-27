@@ -1,5 +1,5 @@
 import React from "react";
-import DiscoverDrinks from "../components/DiscoverDrinks";
+import DiscoverDrinks from "../components/DiscoverCompo/DiscoverDrinks";
 
 function Discover() {
   return <DiscoverDrinks />;

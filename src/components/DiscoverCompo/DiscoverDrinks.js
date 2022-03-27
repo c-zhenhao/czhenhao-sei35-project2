@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import DiscoverResults from "./DiscoverResults";
-import LoadingSpinner from "./LoadingSpinner";
+import LoadingSpinner from "../LoadingSpinnerCompo/LoadingSpinner";
 import { NavLink } from "react-router-dom";
 
 import styles from "./DiscoverDrinks.module.css";

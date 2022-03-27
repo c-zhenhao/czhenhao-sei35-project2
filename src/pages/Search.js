@@ -1,5 +1,5 @@
 import React from "react";
-import SearchDrink from "../components/SearchDrink";
+import SearchDrink from "../components/SearchCompo/SearchDrink";
 
 function Search() {
   return <SearchDrink />;

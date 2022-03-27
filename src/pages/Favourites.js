@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
-import FavResults from "../components/FavResults";
+import FavResults from "../components/FavouritesCompo/FavResults";
 
 function Favourites() {
   const { favList } = useContext(GlobalContext);

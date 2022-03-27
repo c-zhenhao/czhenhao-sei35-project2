@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import styles from "./DrinksModal.module.css";
 
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/GlobalState";
 
 function DrinkModal(props) {
   return (
