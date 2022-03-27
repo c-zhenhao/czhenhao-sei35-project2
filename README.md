@@ -1,6 +1,7 @@
-# {React ? Stirred : !Notshaken}
+# {React ? Shaken : !Stirred}
 
 See project deployed on Netlify here: https://reactshakennotstirred.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd30ba11-297a-4b23-90c0-f9b12ad58721/deploy-status)](https://app.netlify.com/sites/reactshakennotstirred/deploys)
 
 ## Why
 
@@ -21,8 +22,10 @@ My MVP was to deliver a cocktail recipe search app. For example, if a user would
 - As there was a need to pass multiple information and further display it in a modal, the react app got complicated very quickly (which I have yet organise them...)
 
   - Virtual DOM looks kind of like this:
+  - ![project2_virtualDom](https://user-images.githubusercontent.com/16322250/160202279-23fe78cd-2122-4bf4-abd6-c02302d1ebde.png)
 
-- React hooks that are "not-important-to-syllabus" functions such as `useReducer` & `useContext` in combination was actually quite useful and simplified problems of passing information from one child node. The concept of propping information lifting states was still
+
+- React hooks that are "not-important-to-syllabus" functions such as `useReducer` & `useContext` in combination was actually quite useful and simplified problems of passing information from one child node. The concept of propping information lifting states still key to React and used.
 
   - Creating a "global" function since multiple things need to be done inside a modal. Storing the information in a "global" state
 
@@ -30,9 +33,9 @@ My MVP was to deliver a cocktail recipe search app. For example, if a user would
 
 ## Useful links from the project
 
-[cocktail API](https://www.thecocktaildb.com/api.php)
-[React Movie App using React Hooks (useContext)](https://youtu.be/1eO_hNYzaSc)
-[Unique values in JS Array](https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates)
+- [cocktail API](https://www.thecocktaildb.com/api.php)
+- [React Movie App using React Hooks (useContext)](https://youtu.be/1eO_hNYzaSc)
+- [Unique values in JS Array](https://stackoverflow.com/questions/1960473/get-all-unique-values-in-a-javascript-array-remove-duplicates)
 
 ## Future roadmap
 
