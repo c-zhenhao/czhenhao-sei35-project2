@@ -19,7 +19,7 @@ My MVP was to deliver a cocktail recipe search app. For example, if a user would
 
 ## Interesting points & project post-mortems
 
-- As there was a need to pass multiple information and further display it in a modal, the react app got complicated very quickly (which I have yet organise them...)
+- As there was a need to pass multiple information and further display it in a modal, the react app got complicated very quickly ~~(which I have yet organise them...)~~
 
   - Virtual DOM looks kind of like this:
   - ![project2_virtualDom](https://user-images.githubusercontent.com/16322250/160202279-23fe78cd-2122-4bf4-abd6-c02302d1ebde.png)
