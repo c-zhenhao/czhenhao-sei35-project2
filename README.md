@@ -24,10 +24,9 @@ My MVP was to deliver a cocktail recipe search app. For example, if a user would
   - Virtual DOM looks kind of like this:
   - ![project2_virtualDom](https://user-images.githubusercontent.com/16322250/160202279-23fe78cd-2122-4bf4-abd6-c02302d1ebde.png)
 
+- React hooks that are "not-important-to-syllabus" functions such as `useReducer` & `useContext` in combination was actually quite useful and simplified problems of passing information from one child node. The concept of propping information lifting states still key to React and is used.
 
-- React hooks that are "not-important-to-syllabus" functions such as `useReducer` & `useContext` in combination was actually quite useful and simplified problems of passing information from one child node. The concept of propping information lifting states still key to React and used.
-
-  - Creating a "global" function since multiple things need to be done inside a modal. Storing the information in a "global" state
+  - Creating a "global" function since multiple things need to be done inside a modal. Storing the information in a "global" state was also pretty useful, it acted like a virutal store room, which was great!
 
 - Realised that Object destructruing was a key concept behind React & JS
 
@@ -39,7 +38,10 @@ My MVP was to deliver a cocktail recipe search app. For example, if a user would
 
 ## Future roadmap
 
-0. Organise the folders
-1. Create the modal for Discover drinks. The cocktail
+0. ~~Organise the folders~~ _done 27 mar_
+1. Create the modal for Discover drinks. The [cocktail API](https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin) doesnt actually return the full drink information when searching by ingredients, but does have the drink ID.
+
+   1. need to find a way to link them by ID
+
 2. Refactor code - especially the modals
 3. Material UI - look into improving the look & feel so it looks like an actual app
