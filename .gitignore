@@ -29,6 +29,3 @@ Temporary Items
 
 # ignore these folders for this project; embarrassing mess 
 .DS_Store
-src/.DS_Store
-.DS_Store
-.DS_Store
