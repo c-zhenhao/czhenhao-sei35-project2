@@ -29,3 +29,6 @@ Temporary Items
 
 # ignore these folders for this project; embarrassing mess 
 .DS_Store
+
+# ignore node_modules
+node_modules
